@@ -236,4 +236,9 @@ static NSString *SIOMD5(NSString *string) {
     self.javascriptWebView = nil;
 }
 
+-(void)disconnect
+{
+    [self.javascriptContext evaluateScript:[NSString stringWithFormat: @"objc_socket.disconnect;"]];
+}
+
 @end

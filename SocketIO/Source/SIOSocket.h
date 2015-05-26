@@ -43,5 +43,5 @@ typedef NSArray SIOParameterArray;
 - (void)emit:(NSString *)event args:(SIOParameterArray *)args;
 
 - (void)close;
-
+-(void)disconnect;
 @end
